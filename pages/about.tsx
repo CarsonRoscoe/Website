@@ -6,12 +6,12 @@ const App = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Carson's Homepage!</title>
+        <title>About page!</title>
         <meta name="description" content="Carson's Webpage" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <header>
-        <h1>Homepage</h1>
+        <h1>About</h1>
       </header>
 
       <main className={styles.main}>
