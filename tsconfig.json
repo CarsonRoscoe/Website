@@ -4,20 +4,15 @@
     "baseUrl": ".",
     "outDir": "dist",
     "paths": {
-      "@src/*": [
-        "src/*"
-      ],
-      "@styles/*": [
-        "styles/*"
-      ]
+      "@src/*": ["src/*"],
+      "@styles/*": ["styles/*"],
+      "@utils/*": ["utils/*"],
+      "@components/*": ["components/*"],
+      "@apis/*": ["apis/*"]
     },
     /* Project */
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     /* Imports */
     "skipLibCheck": true,
@@ -33,15 +28,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx"
-  ],
-  "exclude": [
-    "node_modules",
-    "dist",
-    "coverage",
-    ".next"
-  ]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules", "dist", "coverage", ".next"]
 }

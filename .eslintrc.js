@@ -3,6 +3,7 @@ module.exports = {
     browser: true,
     es2021: true,
     node: true,
+    jest: true,
   },
   extends: [
     "plugin:@typescript-eslint/recommended",
@@ -30,7 +31,19 @@ module.exports = {
     "import/extensions": "off",
     "react/function-component-definition": "off",
     "react/jsx-props-no-spreading": "off",
-    "import/no-unresolved": "error",
+    "import/no-extraneous-dependencies": "off",
+    "import/no-unresolved": [
+      "error",
+      {
+        devDependencies: [
+          "jest.setup.ts",
+          "**/*.test.tsx",
+          "**/*.spec.tsx",
+          "**/*.test.ts",
+          "**/*.spec.ts",
+        ],
+      },
+    ],
   },
   settings: {
     react: {
