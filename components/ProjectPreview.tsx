@@ -12,6 +12,8 @@ export interface PreviewProps {
   submission: string
 }
 
+export type PreviewInterface = PreviewProps & { fullDescription: string }
+
 export const Preview = ({
   id,
   title,
