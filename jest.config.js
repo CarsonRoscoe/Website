@@ -11,6 +11,7 @@ module.exports = {
   moduleNameMapper: {
     "@utils/(.*)": "<rootDir>/utils/$1",
     "@styles/(.*)": "<rootDir>/styles/$1",
+    "@stitches/(.*)": "<rootDir>/stitches/$1",
     "@components/(.*)": "<rootDir>/components/$1",
     "@apis/(.*)": "<rootDir>/apis/$1",
   },

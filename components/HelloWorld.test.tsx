@@ -1,5 +1,5 @@
 import { render } from "@testing-library/react"
-import HelloWorld from "./helloWorld"
+import HelloWorld from "./HelloWorld"
 
 test("renders a message", () => {
   const { container, getByText } = render(<HelloWorld />)

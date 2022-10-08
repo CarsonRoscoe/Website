@@ -6,6 +6,7 @@
     "paths": {
       "@src/*": ["src/*"],
       "@styles/*": ["styles/*"],
+      "@stitches/*": ["stitches/*"],
       "@utils/*": ["utils/*"],
       "@components/*": ["components/*"],
       "@apis/*": ["apis/*"]
@@ -28,6 +29,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/[*.tsx]"],
   "exclude": ["node_modules", "dist", "coverage", ".next"]
 }

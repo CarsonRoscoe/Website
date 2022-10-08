@@ -1,41 +1,28 @@
-import Head from "next/head"
+import { Box } from "@components/html/Box"
+import { Button } from "@components/html/Button"
+import Page from "@components/Page"
 import styles from "@styles/Home.module.css"
-import Link from "next/link"
 
 const App = () => {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Carson's Homepage!</title>
-        <meta name="description" content="Carson's Webpage" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <header>
-        <h1>Homepage</h1>
-      </header>
-
-      <main className={styles.main}>
-        <div>
-          <h1>Main</h1>
-          <ul>
-            <li>
-              <Link href="/">
-                <a>Home</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/about">
-                <a>About Us</a>
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <h1>Footer</h1>
-      </footer>
-    </div>
+    <Page
+      title="Home"
+      description="Welcome to my site!"
+      content={
+        <main className={styles.main}>
+          <div>
+            <Button
+              onClick={() => {
+                console.info("Click")
+              }}
+            >
+              Test
+            </Button>
+            <h1>Homepage</h1>
+          </div>
+        </main>
+      }
+    />
   )
 }
 
