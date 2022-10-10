@@ -2,35 +2,42 @@ import { createStitches } from "@stitches/react"
 import { isMobile } from "react-device-detect"
 
 const colors = {
-  lightCyan: "rgba(30, 5, 250, 1.0)",
-  cyan: "rgba(30, 5, 250, 1.0)",
-  darkCyan: "rgba(30, 5, 250, 1.0)",
-  lightGreen: "rgba(30, 250, 5, 1.0)",
-  green: "rgba(30, 230, 10, 1.0)",
-  darkGreen: "rgba(5, 150, 5, 1.0)",
+  default: {
+    primaryLight: "#8ecae6",
+    primary: "#219ebc",
+    primaryDark: "#023047",
+    secondary: "#ffb909",
+    secondaryLight: "#fdba08",
+    secondaryDark: "#fb8500",
+  },
 }
+
+const colorScheme = colors.default
 
 const stitches = createStitches({
   theme: {
     colors: {
-      white: "#ffffff",
-      offWhite: "#F9F9F9",
-      lightGray: "#EBEBEB",
-      grey: "#CCCCCC",
-      darkGray: "#979797",
-      black: "#323232",
+      white: "#f5f3f4",
+      grayLight: "#f4f3ee",
+      gray: "#bcb8b1",
+      grayDark: "#8a817c",
+      black: "#463f3a",
 
-      primaryLight: colors.lightCyan,
-      primary: colors.cyan,
-      primaryDark: colors.darkCyan,
+      primaryLight: colorScheme.primaryLight,
+      primary: colorScheme.primary,
+      primaryDark: colorScheme.primaryDark,
 
-      secondaryLight: colors.lightGreen,
-      secondary: colors.green,
-      secondaryDark: colors.darkGreen,
+      secondaryLight: colorScheme.secondaryLight,
+      secondary: colorScheme.secondary,
+      secondaryDark: colorScheme.secondaryDark,
 
-      success: "#688958",
-      errorLight: "#C62203",
-      errorDark: "#FF7369",
+      successLight: "#89bda4",
+      success: "#589d7c",
+      successDark: "#3b6852",
+
+      errorLight: "#f24073",
+      error: "#d20f46",
+      errorDark: "#86092c",
     },
     space: {
       xxl: "64px",

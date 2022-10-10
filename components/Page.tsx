@@ -16,9 +16,6 @@ const Page = ({ title, description, content }: PageProps) => {
     <Box
       css={{
         background: "$white",
-        margin: 0,
-        padding: 0,
-        flex: "max-content",
       }}
     >
       <Head>
@@ -26,9 +23,7 @@ const Page = ({ title, description, content }: PageProps) => {
         <meta name="description" content={description} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <header>
-        <Navigation />
-      </header>
+      <Navigation />
       {content}
 
       <Box className={styles.footer}>

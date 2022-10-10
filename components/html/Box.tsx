@@ -21,5 +21,7 @@ export const Flex = styled("div", { display: "flex" })
 export const Grid = styled("div", { display: "grid" })
 export const Adaptive = styled("div", {
   display: isMobile ? "grid" : "flex",
-  backgroundColor: "cyan",
+})
+export const InvertedAdaptive = styled("div", {
+  display: isMobile ? "flex" : "grid",
 })
